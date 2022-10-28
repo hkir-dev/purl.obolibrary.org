@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pcl
+
+idspace: CCN201912131
+base_url: /obo/CCN201912131
+
+products:
+- CCN201912131.json: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
+
+term_browser: ols
+example_terms:
+- PCL_0011124
+
+entries:
+
+- exact: CCN201912131.json
+  replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
+  tests:
+    - from: /releases/2022-01-24/
+      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/AllenInstitute/MOp_taxonomies_ontology/tree/main/humanM1_CCN201912131/

@@ -1,7 +1,7 @@
 ### Global Failovers!!!
 
 # Redirect anything /obo/ that was not matched back to the old PURL system.
-RedirectMatch temp ^/obo/(.*)$ http://purl.oclc.org/obo/$1
+# RedirectMatch temp ^/obo/(.*)$ http://purl.oclc.org/obo/$1
 
 ### Meta
 # http://purl.obolibrary.org/meta/
@@ -10,4 +10,4 @@ RedirectMatch temp ^/obo/(.*)$ http://purl.oclc.org/obo/$1
 RedirectMatch temp ^/meta/(.*)$ https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/$1
 
 # Redirect anything else to the GitHub page.
-RedirectMatch temp ^.*$ https://github.com/OBOFoundry/purl.obolibrary.org/
+RedirectMatch temp ^.*$ https://github.com/hkir-dev/purl.obolibrary.org/

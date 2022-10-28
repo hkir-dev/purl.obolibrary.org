@@ -10,7 +10,7 @@
   vars:
     mode:      production
     domain:    purl.obolibrary.org
-    owner:     OBOFoundry
+    owner:     hkir-dev
     repo:      purl.obolibrary.org
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"

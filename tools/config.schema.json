@@ -32,10 +32,10 @@
 			"pattern": "^[A-Za-z][A-Za-z0-9_]+$"
 		},
 		"base_url": {
-			"description": "must begin with '/obo'",
+			"description": "must begin with '/obo|taxonomy|ontology|data'",
 			"type": "string",
-			"pattern": "^\\/obo",
-			"suggestion": "/obo/"
+			"pattern": "^\\/(obo|taxonomy|ontology|data)",
+			"suggestion": "/taxonomy/"
 		},
 		"base_redirect": {
 			"description": "must be a valid URL",

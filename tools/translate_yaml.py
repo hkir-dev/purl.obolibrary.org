@@ -288,9 +288,9 @@ def translate_products(yamldoc):
 
       products.append(process_product(product))
 
-    if not products_have_owl:
-      print("WARNING: In project '{}': Mandatory .owl entry missing from product list."
-            .format(yamldoc['idspace']))
+    # if not products_have_owl:
+    #   print("WARNING: In project '{}': Mandatory .owl entry missing from product list."
+    #         .format(yamldoc['idspace']))
 
     return products
 

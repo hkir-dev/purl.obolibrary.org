@@ -278,10 +278,10 @@ def translate_products(yamldoc):
     products = []
     for product in yamldoc['products']:
       key = [k for k in product].pop()
-      if not (key.lower().endswith('.owl') or key.lower().endswith('.obo')):
+      if not (key.lower().endswith('.owl') or key.lower().endswith('.obo') or key.lower().endswith('.json')):
         # If we want to enforce this condition, the way to do it is to add
         # `"additionalProperties": false` right after `patternProperties` in the schema file.
-        print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo'"
+        print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo' or '.json'"
               .format(yamldoc['idspace'], key))
       if key.endswith('.owl'):
         products_have_owl = True

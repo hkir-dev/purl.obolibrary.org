@@ -12,7 +12,7 @@ example_terms:
 
 entries:
 
-- exact: CCN201912131.json
+- exact: /CCN201912131.json
   replacement: https://raw.githubusercontent.com/AllenInstitute/MOp_taxonomies_ontology/main/humanM1_CCN201912131/updated_dendrogram_CCN201912131.json
 
 - prefix: /releases/

@@ -91,7 +91,13 @@ build: BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime
 build: | backup/ www/obo/
 	tools/translate_yaml.py --input_dir config --output_dir temp/obo
 	rm -rf temp/obo/obo temp/obo/OBO
+	rm -rf temp/taxonomy
+	rm -rf temp/ontology
+	rm -rf temp/data
 	-test -e www/obo && mv www/obo $(BACKUP)
+	cp -R temp/obo www/taxonomy
+	cp -R temp/obo www/ontology
+	cp -R temp/obo www/data
 	mv temp/obo www/obo
 	rmdir temp
 
